@@ -1,0 +1,12 @@
+{
+    "name": "koren/script",
+    "authors": [
+        {
+            "name": "Radex",
+            "email": "korenek01@rambler.ru"
+        }
+    ],
+    "require": {
+        "retailcrm/api-client-php": "~5.0"
+    }
+}
