@@ -1,0 +1,1 @@
+SELECT users.name, count(phone_numbers.phone) as count_phone FROM users JOIN phone_numbers ON users.id = phone_numbers.user_id WHERE ((users.gender = 2) and TIMESTAMPDIFF(YEAR, DATE_FORMAT(FROM_UNIXTIME(users.birth_date), '%Y-%m-%d'), CURDATE()) BETWEEN 18 AND 22) group by users.name;
